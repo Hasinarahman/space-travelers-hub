@@ -12,7 +12,7 @@ export const getDataFromServer = createAsyncThunk('rocket/getDataFromServer', as
   }
 })
 
-const initialState = 
+const initialState = {
   rocketData : [],
   loading: false,
   error: '',
