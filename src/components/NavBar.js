@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import planet from '../assets/planet.png';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Install react-icons for icons
+import planet from '../assets/planet.png';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,11 +15,12 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <div className="flex items-center space-x-4">
           <img src={planet} alt="planet logo" className="h-10 w-10" />
-          <h1 className="text-2xl font-bold tracking-wide">Space Traveler's Hub</h1>
+          <h1 className="text-2xl font-bold tracking-wide">Space Traveler`s Hub</h1>
         </div>
 
         {/* Hamburger Menu Button (visible on small screens) */}
         <button
+          type='submit'
           onClick={toggleMobileMenu}
           className="block lg:hidden text-2xl focus:outline-none"
         >
@@ -32,11 +33,9 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) =>
-                  isActive
+                className={({ isActive }) => isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'
-                }
+                    : 'hover:text-blue-400'}
               >
                 Rocket
               </NavLink>
@@ -44,11 +43,9 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/Missions"
-                className={({ isActive }) =>
-                  isActive
+                className={({ isActive }) => isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'
-                }
+                    : 'hover:text-blue-400'}
               >
                 Missions
               </NavLink>
@@ -56,11 +53,9 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/Dragons"
-                className={({ isActive }) =>
-                  isActive
+                className={({ isActive }) => isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'
-                }
+                    : 'hover:text-blue-400'}
               >
                 Dragons
               </NavLink>
@@ -68,11 +63,9 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/myProfile"
-                className={({ isActive }) =>
-                  isActive
+                className={({ isActive }) => isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'
-                }
+                    : 'hover:text-blue-400'}
               >
                 My Profile
               </NavLink>
@@ -92,11 +85,9 @@ const Navbar = () => {
             <NavLink
               to="/"
               onClick={toggleMobileMenu} // Close the menu on click
-              className={({ isActive }) =>
-                isActive
+              className={({ isActive }) => isActive
                   ? 'text-blue-500 border-b-2 border-blue-500'
-                  : 'hover:text-blue-400'
-              }
+                  : 'hover:text-blue-400'}
             >
               Rocket
             </NavLink>
@@ -105,11 +96,9 @@ const Navbar = () => {
             <NavLink
               to="/Missions"
               onClick={toggleMobileMenu}
-              className={({ isActive }) =>
-                isActive
+              className={({ isActive }) => isActive
                   ? 'text-blue-500 border-b-2 border-blue-500'
-                  : 'hover:text-blue-400'
-              }
+                  : 'hover:text-blue-400'}
             >
               Missions
             </NavLink>
@@ -118,11 +107,9 @@ const Navbar = () => {
             <NavLink
               to="/Dragons"
               onClick={toggleMobileMenu}
-              className={({ isActive }) =>
-                isActive
+              className={({ isActive }) => isActive
                   ? 'text-blue-500 border-b-2 border-blue-500'
-                  : 'hover:text-blue-400'
-              }
+                  : 'hover:text-blue-400'}
             >
               Dragons
             </NavLink>
@@ -131,11 +118,7 @@ const Navbar = () => {
             <NavLink
               to="/myProfile"
               onClick={toggleMobileMenu}
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-blue-500 border-b-2 border-blue-500'
-                  : 'hover:text-blue-400'
-              }
+              className={({ isActive }) => isActive ? 'text-blue-500 border-b-2 border-blue-500' : 'hover:text-blue-400'}
             >
               My Profile
             </NavLink>
