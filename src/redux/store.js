@@ -6,5 +6,3 @@ export default configureStore({
         rocket: rocketReducer,
     },
 })
-
-export
