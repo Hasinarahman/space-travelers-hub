@@ -18,7 +18,7 @@ const initialState = {
   error: '',
 }
 
-const RocketSlice  = createSlice({
+const RocketSlice  = createSlice(
   name: 'rocket',
   initialState,
   reducers: {
