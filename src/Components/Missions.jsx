@@ -18,6 +18,14 @@ const Missions = () => {
     fetchMissions();
   }, [dispatch]);
 
+  const handleJoin = (missionId) => {
+    dispatch(joinMission(missionId));
+  };
+
+  const handleLeave = (missionId) => {
+    dispatch(leaveMission(missionId));
+  };
+
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Missions</h1>
@@ -26,6 +34,29 @@ const Missions = () => {
           <li key={mission.mission_id} className="p-4 border rounded-lg shadow-md bg-white">
             <h2 className="text-xl font-semibold">{mission.mission_name}</h2>
             <p className="text-grey-600">{mission.description}</p>
+            <div className="mt-2">
+            {mission.joined ? (
+                <>
+                  <span className="inline-block px-3 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full">Active Member</span>
+                  <button
+                    onClick={() => handleLeave(mission.mission_id)}
+                    className="ml-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                  >
+                    Leave Mission
+                  </button>
+                </>
+              ) : (
+                <>
+                  <span className="inline-block px-3 py-1 text-sm font-medium text-gray-800 bg-gray-100 rounded-full">Not a Member</span>
+                  <button
+                    onClick={() => handleJoin(mission.mission_id)}
+                    className="ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                  >
+                    Join Mission
+                  </button>
+                </>
+              )}
+            </div>
           </li>
         ))}
       </ul>
