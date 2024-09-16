@@ -1,11 +1,20 @@
-import './App.css';
-import './index.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Missions from './Components/Missions';
+import Navbar from './Components/Navbar';
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      Hello world
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <main className="p-4">
+          <Routes>
+            <Route path="/missions" element={<Missions />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { joinMission, leaveMission, setMissions } from '../actions/missionActions';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -33,9 +34,9 @@ const Missions = () => {
         {missions.map((mission) => (
           <li key={mission.mission_id} className="p-4 border rounded-lg shadow-md bg-white">
             <h2 className="text-xl font-semibold">{mission.mission_name}</h2>
-            <p className="text-grey-600">{mission.description}</p>
+            <p className="text-gray-600">{mission.description}</p>
             <div className="mt-2">
-            {mission.joined ? (
+              {mission.joined ? (
                 <>
                   <span className="inline-block px-3 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full">Active Member</span>
                   <button
