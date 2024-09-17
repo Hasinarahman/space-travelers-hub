@@ -1,9 +1,9 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveRocket } from '../redux/rockets/rocketsSlice';
 
 
-const RocketItem = ({ id, name, description, images, type, reserved}) => {
+const RocketItem = ({ id, name, description, images, reserved}) => {
   const dispatch = useDispatch();
 
   const handleButton = (buttonId) => {
@@ -41,6 +41,18 @@ const RocketItem = ({ id, name, description, images, type, reserved}) => {
       </button>
     </div>
   );
+
+  RocketItem.PropTypes = {
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    reserved: PropTypes.bool,
+  }
+
+  RocketItem.defaultProps = {
+    reserved: false,
+  }
 };
 
 export default RocketItem;
