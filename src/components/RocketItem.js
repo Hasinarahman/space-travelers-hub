@@ -7,7 +7,7 @@ const RocketItem = ({
   name,
   description,
   images,
-  reserved
+  reserved,
 }) => {
   const dispatch = useDispatch();
 

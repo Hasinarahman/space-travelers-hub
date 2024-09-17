@@ -4,8 +4,7 @@ import axios from 'axios';
 export const getDataFromServer = createAsyncThunk('rocket/getDataFromServer', async () => {
   const baseUrl = 'https://api.spacexdata.com/v4/rockets';
   try {
-    const response = await axios.get(baseUrl);
-    const data = response.data;
+    const { data } = await axios.get(baseUrl); // Use object destructuring here
     return data;
   } catch (error) {
     return error.message;
