@@ -46,6 +46,15 @@ const RocketItem = ({
       </button>
     </div>
   );
+
+  RocketItem.propTypes = {
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    type: PropTypes.string,
+    reserved: PropTypes.bool,
+  };
 };
 
 export default RocketItem;
