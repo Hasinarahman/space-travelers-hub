@@ -1,21 +1,32 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Missions from './Components/Missions';
-import Navbar from './Components/Navbar';
+import './App.css';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import Navbar from './components/NavBar';
+import Rocket from './components/Rocket';
+import Missions from './components/Missions';
+import Dragon from './components/Dragon';
+import MyProfile from './components/MyProfile';
+import { getDataFromServer } from './redux/rockets/rocketsSlice';
+import './index.css';
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getDataFromServer());
+  }, [dispatch]);
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <main className="p-4">
-          <Routes>
-            <Route path="/missions" element={<Missions />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Rocket />} />
+        <Route path="Missions" element={<Missions />} />
+        <Route path="Dragons" element={<Dragon />} />
+        <Route path="myprofile" element={<MyProfile />} />
+      </Routes>
+    </div>
   );
-}
+};
 
 export default App;
