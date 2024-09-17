@@ -2,8 +2,13 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveRocket } from '../redux/rockets/rocketsSlice';
 
-
-const RocketItem = ({ id, name, description, images, reserved}) => {
+const RocketItem = ({
+  id,
+  name,
+  description,
+  images,
+  reserved
+}) => {
   const dispatch = useDispatch();
 
   const handleButton = (buttonId) => {
@@ -25,7 +30,7 @@ const RocketItem = ({ id, name, description, images, reserved}) => {
       {reserved ? (
         <p className="text-green-500 font-semibold mb-4">Reserved</p>
       ) : (
-        <p className="text-gry-500 font-semibold mb-4">Not Reserved</p>
+        <p className="text-gray-500 font-semibold mb-4">Not Reserved</p>
       )}
 
       <button
@@ -41,18 +46,20 @@ const RocketItem = ({ id, name, description, images, reserved}) => {
       </button>
     </div>
   );
+};
 
-  RocketItem.PropTypes = {
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    reserved: PropTypes.bool,
-  }
+// Define propTypes outside the component
+RocketItem.propTypes = {
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  images: PropTypes.string.isRequired, // Fixed prop name consistency
+  reserved: PropTypes.bool,
+};
 
-  RocketItem.defaultProps = {
-    reserved: false,
-  }
+// Define default props
+RocketItem.defaultProps = {
+  reserved: false,
 };
 
 export default RocketItem;
