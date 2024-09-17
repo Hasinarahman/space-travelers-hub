@@ -107,18 +107,24 @@ const Navbar = () => {
             <NavLink
               to="/Dragons"
               onClick={toggleMobileMenu}
-              className={({ isActive }) => isActive
-                  ? 'text-blue-500 border-b-2 border-blue-500'
-                  : 'hover:text-blue-400'}
-            >
-              Dragons
-            </NavLink>
-          </li>
-          <li>
+              className={({ isActive }) => (
+              isActive
+              ? 'text-blue-500 border-b-2 border-blue-500'
+              : 'hover:text-blue-400'
+          )}
+          >
+         Dragons
+        </NavLink>
+         </li>
+         <li>
             <NavLink
               to="/myProfile"
               onClick={toggleMobileMenu}
-              className={({ isActive }) => isActive ? 'text-blue-500 border-b-2 border-blue-500' : 'hover:text-blue-400'}
+              className={({ isActive }) => (
+              isActive 
+              ? 'text-blue-500 border-b-2 border-blue-500' :
+               'hover:text-blue-400'
+             )}
             >
               My Profile
             </NavLink>
