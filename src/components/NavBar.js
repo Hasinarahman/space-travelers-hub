@@ -20,7 +20,7 @@ const Navbar = () => {
 
         {/* Hamburger Menu Button (visible on small screens) */}
         <button
-          type='submit'
+          type="submit"
           onClick={toggleMobileMenu}
           className="block lg:hidden text-2xl focus:outline-none"
         >
@@ -33,9 +33,11 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) => isActive
+                className={({ isActive }) => (
+                  isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'}
+                    : 'hover:text-blue-400'
+                  )}
               >
                 Rocket
               </NavLink>
@@ -43,9 +45,11 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/Missions"
-                className={({ isActive }) => isActive
+                className={({ isActive }) => (
+                  isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'}
+                    : 'hover:text-blue-400'
+                  )}
               >
                 Missions
               </NavLink>
@@ -53,9 +57,11 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/Dragons"
-                className={({ isActive }) => isActive
+                className={({ isActive }) => (
+                  isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'}
+                    : 'hover:text-blue-400'
+                  )}
               >
                 Dragons
               </NavLink>
@@ -63,9 +69,11 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/myProfile"
-                className={({ isActive }) => isActive
+                className={({ isActive }) => (
+                  isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'}
+                    : 'hover:text-blue-400'
+                  )}
               >
                 My Profile
               </NavLink>
@@ -85,9 +93,11 @@ const Navbar = () => {
             <NavLink
               to="/"
               onClick={toggleMobileMenu} // Close the menu on click
-              className={({ isActive }) => isActive
+              className={({ isActive }) => (
+                isActive
                   ? 'text-blue-500 border-b-2 border-blue-500'
-                  : 'hover:text-blue-400'}
+                  : 'hover:text-blue-400'
+                )}
             >
               Rocket
             </NavLink>
@@ -96,9 +106,11 @@ const Navbar = () => {
             <NavLink
               to="/Missions"
               onClick={toggleMobileMenu}
-              className={({ isActive }) => isActive
+              className={({ isActive }) => (
+                isActive
                   ? 'text-blue-500 border-b-2 border-blue-500'
-                  : 'hover:text-blue-400'}
+                  : 'hover:text-blue-400'
+                )}
             >
               Missions
             </NavLink>
@@ -108,23 +120,23 @@ const Navbar = () => {
               to="/Dragons"
               onClick={toggleMobileMenu}
               className={({ isActive }) => (
-              isActive
-              ? 'text-blue-500 border-b-2 border-blue-500'
-              : 'hover:text-blue-400'
-          )}
-          >
-         Dragons
-        </NavLink>
-         </li>
-         <li>
+                isActive
+                  ? 'text-blue-500 border-b-2 border-blue-500'
+                  : 'hover:text-blue-400'
+              )}
+            >
+              Dragons
+            </NavLink>
+          </li>
+          <li>
             <NavLink
               to="/myProfile"
               onClick={toggleMobileMenu}
               className={({ isActive }) => (
-              isActive 
-              ? 'text-blue-500 border-b-2 border-blue-500' :
-               'hover:text-blue-400'
-             )}
+                isActive
+                  ? 'text-blue-500 border-b-2 border-blue-500' 
+                  :'hover:text-blue-400'
+              )}
             >
               My Profile
             </NavLink>

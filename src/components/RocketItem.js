@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { reserveRocket } from ''../redux/rockets/rocketsSlice';
+import { reserveRocket } from '../redux/rockets/rocketsSlice';
 
 const RocketItem = ({ id, name, description, images, type, reserved }) => {
   const dispatch = useDispatch();

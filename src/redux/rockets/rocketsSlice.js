@@ -48,7 +48,7 @@ const RocketSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       });
-  };
+  },
 });
 
 export default RocketSlice.reducer;
