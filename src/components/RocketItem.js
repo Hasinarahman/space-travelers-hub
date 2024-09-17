@@ -1,5 +1,5 @@
-import { useDispatch } from "react-redux";
-import { reserveRocket } from "../redux/rockets/rocketsSlice";
+import { useDispatch } from 'react-redux';
+import { reserveRocket } from ''../redux/rockets/rocketsSlice';
 
 const RocketItem = ({ id, name, description, images, type, reserved }) => {
   const dispatch = useDispatch();
@@ -33,6 +33,7 @@ const RocketItem = ({ id, name, description, images, type, reserved }) => {
 
       {/* Reserve/Cancel Button */}
       <button
+        type='submit'
         onClick={() => handleButton(id)}
         className={`px-4 py-2 rounded font-semibold ${
           reserved

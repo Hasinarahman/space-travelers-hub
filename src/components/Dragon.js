@@ -1,6 +1,6 @@
 const Dragon = () => {
   return (
-    <p>Dragon </p>
+    <h1>Dragon </h1>
   );
 };
 

@@ -8,7 +8,7 @@ const ProfilePage = () => {
   return (
     <div>
       <h2>My Profile</h2>
-    
+
       <section>
         <h3>My Rockets</h3>
         <ul>
