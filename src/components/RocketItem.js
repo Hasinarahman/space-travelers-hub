@@ -33,7 +33,7 @@ const RocketItem = ({ id, name, description, images, type, reserved }) => {
 
       {/* Reserve/Cancel Button */}
       <button
-        type='submit'
+        type="submit"
         onClick={() => handleButton(id)}
         className={`px-4 py-2 rounded font-semibold ${
           reserved

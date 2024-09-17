@@ -37,7 +37,7 @@ const Navbar = () => {
                   isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
                     : 'hover:text-blue-400'
-                  )}
+                )}
               >
                 Rocket
               </NavLink>
@@ -49,7 +49,7 @@ const Navbar = () => {
                   isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
                     : 'hover:text-blue-400'
-                  )}
+                )}
               >
                 Missions
               </NavLink>
@@ -61,7 +61,7 @@ const Navbar = () => {
                   isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
                     : 'hover:text-blue-400'
-                  )}
+                )}
               >
                 Dragons
               </NavLink>
@@ -73,7 +73,7 @@ const Navbar = () => {
                   isActive
                     ? 'text-blue-500 border-b-2 border-blue-500'
                     : 'hover:text-blue-400'
-                  )}
+                )}
               >
                 My Profile
               </NavLink>
@@ -97,7 +97,7 @@ const Navbar = () => {
                 isActive
                   ? 'text-blue-500 border-b-2 border-blue-500'
                   : 'hover:text-blue-400'
-                )}
+              )}
             >
               Rocket
             </NavLink>
@@ -110,7 +110,7 @@ const Navbar = () => {
                 isActive
                   ? 'text-blue-500 border-b-2 border-blue-500'
                   : 'hover:text-blue-400'
-                )}
+              )}
             >
               Missions
             </NavLink>
@@ -134,8 +134,8 @@ const Navbar = () => {
               onClick={toggleMobileMenu}
               className={({ isActive }) => (
                 isActive
-                  ? 'text-blue-500 border-b-2 border-blue-500' 
-                  :'hover:text-blue-400'
+                  ? 'text-blue-500 border-b-2 border-blue-500'
+                  : 'hover:text-blue-400'
               )}
             >
               My Profile

@@ -6,7 +6,7 @@ const Rocket = () => {
 
   return (
     <div className="container mx-auto p-6 w-50px">
-    
+
       {loading && <p className="text-center text-blue-500">Loading...</p>}
       {error && <p className="text-center text-red-500">Error! Unable to load data.</p>}
 
