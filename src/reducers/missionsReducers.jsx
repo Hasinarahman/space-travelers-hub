@@ -19,16 +19,20 @@ const missionReducer = (state = initialState, action) => {
     case 'JOIN_MISSION':
       return {
         ...state,
-        missions: state.missions.map((mission) => mission.missionId === action.payload
-          ? { ...mission, joined: true }
-          : mission),
+        missions: state.missions.map((mission) => {
+          return mission.missionId === action.payload
+            ? { ...mission, joined: true }
+            : mission;
+        }),
       };
     case 'LEAVE_MISSION':
       return {
         ...state,
-        missions: state.missions.map((mission) => mission.missionId === action.payload
-          ? { ...mission, joined: false }
-          : mission),
+        missions: state.missions.map((mission) => {
+          return mission.missionId === action.payload
+            ? { ...mission, joined: false }
+            : mission;
+        }),
       };
     default:
       return state;
