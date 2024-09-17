@@ -1,8 +1,3 @@
-const Missions = () => {
-  return (
-    <p>Mission </p>
-  );
-};
+const Missions = () => <p>Mission</p>;
 
 export default Missions;
-
