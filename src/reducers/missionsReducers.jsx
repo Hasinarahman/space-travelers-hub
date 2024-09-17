@@ -30,6 +30,8 @@ const missionReducer = (state = initialState, action) => {
           ? { ...mission, joined: false }
           : mission),
       };
+    default:
+      return state;
   }
 };
 
