@@ -1,15 +1,8 @@
 const initialState = {
-  missions: [
-    {
-      missionId: '1',
-      missionName: 'Mission 1',
-      description: 'Description 1',
-      joined: false,
-    },
-  ],
+  missions: [],
 };
 
-const missionReducer = (state = initialState, action) => {
+const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_MISSIONS':
       return {
@@ -17,22 +10,26 @@ const missionReducer = (state = initialState, action) => {
         missions: action.payload,
       };
     case 'JOIN_MISSION':
-    case 'LEAVE_MISSION': {
-      const joinedStatus = action.type === 'JOIN_MISSION';
-
       return {
         ...state,
-        missions: state.missions.map((mission) => {
-          if (mission.missionId === action.payload) {
-            return { ...mission, joined: joinedStatus };
-          }
-          return mission;
-        }),
+        missions: state.missions.map(mission =>
+          mission.mission_id === action.payload
+            ? { ...mission, joined: true }
+            : mission
+        ),
       };
-    }
+    case 'LEAVE_MISSION':
+      return {
+        ...state,
+        missions: state.missions.map(mission =>
+          mission.mission_id === action.payload
+            ? { ...mission, joined: false }
+            : mission
+        ),
+      };
     default:
       return state;
   }
 };
 
-export default missionReducer;
+export default missionsReducer;
