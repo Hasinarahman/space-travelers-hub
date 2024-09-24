@@ -10,7 +10,8 @@ It’s a perfect app for those who dream of exploring the final frontier!
 - [Getting Started](#getting-started)
 - [Deployment](#deployment)
 - [Live Link](#live-link)
-- [GIF Showcase](#gif-showcase)
+- [Prerequisites](#Prerequisites)
+- [Demo](#Demo)
 - [Authors](#authors)
 - [Show Your Support](#show-your-support)
 
@@ -47,7 +48,7 @@ To set up the Space Travelers Hub on your local machine, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone 
+   git clone git@github.com:Hasinarahman/space-travelers-hub.git
    ```
 
 2. **Navigate to the Project Directory**:
@@ -102,28 +103,28 @@ To prepare the application for production deployment:
 
 [Live Link here]().
 
-## GIF Showcase
+## Prerequisites
+- [x] A web browser like [Google Chrome](https://www.google.com/chrome/).
+- [x] A code editor like [Visual Studio Code](https://code.visualstudio.com/).
+- [x] A terminal to run the code.
+- [x] [Node.js](https://nodejs.org/en/) installed on your computer.
+- [x] [Git](https://git-scm.com/) installed on your computer.
 
-Here is a GIF demonstrating the key features of Space Travelers Hub:
+## Demo
 
-### General Application Overview
-This GIF provides an overview of the application’s functionalities, including rocket reservations, mission participation, and dragon bookings.
-
-
-![General Overview](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2c4Ym93bWV1c3RpNjBiem9hbHU1Mzlkanc0aDE0ZTg2a3gyYWIzNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/574JmIKxZj0qO0kTA8/giphy.gif)
 
 ## Authors
 
 - **Hasina Rahmani**
-  - GitHub: [@Hasina rahman]()
-  - LinkedIn: [LinkedIn]()
-  - Email: [Email]()
+  - GitHub: [@Hasina rahman](https://github.com/dashboard)
+  - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hasina-rahmani-4a21a9311/)
+  - Email: [Email](mailto:hasinarahmani548@gmail.com)
 
 - **Najeeba Qarqin**
-  - GitHub: [@Najeeb qargin]()
-  - LinkedIn: [LinkedIn]()
-  - Email: [Email]()
+  - GitHub: [@Najeeb qargin](https://github.com/Najeeba-Qarqin)
+  - LinkedIn: [LinkedIn](https://www.linkedin.com/in/najeeba-qarqin-5419502ab)
+  - Email: [Email](mailto:najeebaqarqin@gmail.com)
 
 ## Show Your Support
 
-If you appreciate this project, consider giving it a ⭐ on [GitHub](https://github.com/sja-thedude/Space-Travelers-Hub).
+If you appreciate this project, consider giving it a ⭐ on [GitHub](https://github.com/Hasinarahman/space-travelers-hub).
