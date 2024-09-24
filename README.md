@@ -5,8 +5,8 @@ It’s a perfect app for those who dream of exploring the final frontier!
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
+- [Features](#Features ✨)
+- [Technologies Used](#Technologies Used 🛠)
 - [Getting Started](#getting-started)
 - [Deployment](#deployment)
 - [Live Link](#live-link)
@@ -116,12 +116,12 @@ To prepare the application for production deployment:
 ## Authors
 
 - **Hasina Rahmani**
-  - GitHub: [@Hasina rahman](https://github.com/dashboard)
+  - GitHub: [@Hasinarahman](https://github.com/dashboard)
   - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hasina-rahmani-4a21a9311/)
   - Email: [Email](mailto:hasinarahmani548@gmail.com)
 
 - **Najeeba Qarqin**
-  - GitHub: [@Najeeb qargin](https://github.com/Najeeba-Qarqin)
+  - GitHub: [@Najeeba-Qarqin](https://github.com/Najeeba-Qarqin)
   - LinkedIn: [LinkedIn](https://www.linkedin.com/in/najeeba-qarqin-5419502ab)
   - Email: [Email](mailto:najeebaqarqin@gmail.com)
 
