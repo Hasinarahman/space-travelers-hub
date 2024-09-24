@@ -5,8 +5,8 @@ It’s a perfect app for those who dream of exploring the final frontier!
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Features](#Features ✨)
-- [Technologies Used](#Technologies Used 🛠)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Deployment](#deployment)
 - [Live Link](#live-link)
@@ -25,13 +25,13 @@ The Space Travelers Hub is designed to offer a rich user experience by integrati
 
  In this project use React, Redux, and style with Tailwind CSS. and you can use it easily.
 
-## Features ✨
+## Features
 
 - **🚀 Rockets**:  Manage your rocket bookings with ease.
 - **🛰️ Missions**: Join or exit missions, with complete details provided.
 - **👤 My Profile**:  View and manage all reservations and mission statuses in one centralized location.
 
-## Technologies Used 🛠
+## Technologies Used
 
 - **React**: For building interactive user interfaces using a component-based architecture.
 - **JavaScript**: The core language for application logic and functionality.
