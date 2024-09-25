@@ -1,5 +1,12 @@
 const initialState = {
-  missions: [],
+  missions: [
+    {
+      missionId:'1',
+      missionName: 'Missions 1',
+      description: 'Description 1',
+      joined: false,
+    },
+  ],
 };
 
 const missionsReducer = (state = initialState, action) => {
@@ -10,22 +17,18 @@ const missionsReducer = (state = initialState, action) => {
         missions: action.payload,
       };
     case 'JOIN_MISSION':
+    case 'LEAVE_MISSION': {
+      const joinedStatus = action.type === 'JOIN-MISSION';
+
       return {
         ...state,
-        missions: state.missions.map(mission =>
-          mission.mission_id === action.payload
-            ? { ...mission, joined: true }
-            : mission
-        ),
+        missions: state.missions.map((mission) => {
+          if(mission.missionId === action.payload){
+            return { ...mission, joined: joinedStatus };
+          }
+          return mission;
+        }),
       };
-    case 'LEAVE_MISSION':
-      return {
-        ...state,
-        missions: state.missions.map(mission =>
-          mission.mission_id === action.payload
-            ? { ...mission, joined: false }
-            : mission
-        ),
       };
     default:
       return state;

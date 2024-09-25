@@ -1,11 +1,11 @@
-export const joinMission = (mission_id) => ({
+export const joinMission = (missionId) => ({
   type: 'JOIN_MISSION',
-  payload: mission_id,
+  payload: missionId,
 });
 
-export const leaveMission = (mission_id) => ({
+export const leaveMission = (missionId) => ({
   type: 'LEAVE_MISSION',
-  payload: mission_id,
+  payload: missionId,
 });
 
 export const setMissions = (missions) => ({
