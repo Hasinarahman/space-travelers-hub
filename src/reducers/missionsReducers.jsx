@@ -2,14 +2,14 @@ const initialState = {
   missions: [
     {
       missionId: '1',
-      missionName: 'Mission 1',
+      missionName: 'Missions 1',
       description: 'Description 1',
       joined: false,
     },
   ],
 };
 
-const missionReducer = (state = initialState, action) => {
+const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_MISSIONS':
       return {
@@ -18,7 +18,7 @@ const missionReducer = (state = initialState, action) => {
       };
     case 'JOIN_MISSION':
     case 'LEAVE_MISSION': {
-      const joinedStatus = action.type === 'JOIN_MISSION';
+      const joinedStatus = action.type === 'JOIN-MISSION';
 
       return {
         ...state,
@@ -35,4 +35,4 @@ const missionReducer = (state = initialState, action) => {
   }
 };
 
-export default missionReducer;
+export default missionsReducer;

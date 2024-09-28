@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import missionReducer from './missionsReducers';
+import missionsReducer from './missionsReducers';
 
 const rootReducer = combineReducers({
-  missions: missionReducer,
+  missions: missionsReducer,
 });
 
 export default rootReducer;

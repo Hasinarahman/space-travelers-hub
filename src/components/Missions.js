@@ -4,7 +4,7 @@ import { joinMission, leaveMission, setMissions } from '../actions/missionAction
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missions.missions);
+  const missions = useSelector((state) => state.missions?.missions || []);
 
   useEffect(() => {
     const fetchMissions = async () => {
@@ -38,7 +38,7 @@ const Missions = () => {
             <div className="mt-2">
               {mission.joined ? (
                 <>
-                  <span className="inline-block px-3 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full">Active Member</span>
+                  <span className="inline-block px-3 py-1 text-sm font-medium text-green-500 rounded-full">Active Member</span>
                   <button
                     type="button"
                     onClick={() => handleLeave(mission.missionId)}
@@ -49,7 +49,7 @@ const Missions = () => {
                 </>
               ) : (
                 <>
-                  <span className="inline-block px-3 py-1 text-sm font-medium text-gray-800 bg-gray-100 rounded-full">Not a Member</span>
+                  <span className="inline-block px-3 py-1 text-sm font-medium text-gray-500 rounded-full">Not a Member</span>
                   <button
                     type="button"
                     onClick={() => handleJoin(mission.missionId)}
