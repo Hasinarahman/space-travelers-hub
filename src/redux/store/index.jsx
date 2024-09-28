@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import { loadState, saveState } from './localStorage';
-import { rootReducer } from '../reducers/index';
+import { rootReducer } from '../../reducers/index.jsx';
 
 const store = createStore(
   rootReducer,

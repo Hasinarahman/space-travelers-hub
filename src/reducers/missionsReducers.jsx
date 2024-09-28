@@ -29,7 +29,7 @@ const missionsReducer = (state = initialState, action) => {
           return mission;
         }),
       };
-    };
+    }
     default:
       return state;
   }
