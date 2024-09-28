@@ -40,6 +40,7 @@ const Missions = () => {
                 <>
                   <span className="inline-block px-3 py-1 text-sm font-medium text-green-500 rounded-full">Active Member</span>
                   <button
+                    type="button"
                     onClick={() => handleLeave(mission.missionId)}
                     className="ml-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
                   >
@@ -50,6 +51,7 @@ const Missions = () => {
                 <>
                   <span className="inline-block px-3 py-1 text-sm font-medium text-gray-500 rounded-full">Not a Member</span>
                   <button
+                    type="button"
                     onClick={() => handleJoin(mission.missionId)}
                     className="ml-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
                   >

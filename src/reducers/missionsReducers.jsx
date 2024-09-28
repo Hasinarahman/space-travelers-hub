@@ -1,7 +1,7 @@
 const initialState = {
   missions: [
     {
-      missionId:'1',
+      missionId: '1',
       missionName: 'Missions 1',
       description: 'Description 1',
       joined: false,
@@ -23,13 +23,13 @@ const missionsReducer = (state = initialState, action) => {
       return {
         ...state,
         missions: state.missions.map((mission) => {
-          if(mission.missionId === action.payload){
+          if (mission.missionId === action.payload) {
             return { ...mission, joined: joinedStatus };
           }
           return mission;
         }),
       };
-      };
+    };
     default:
       return state;
   }

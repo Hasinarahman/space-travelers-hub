@@ -11,6 +11,6 @@ export const loadState = () => {
 };
 
 export const saveState = (state) => {
-    const serializedState = JSON.stringify(state);
-    localStorage.setItem('state', serializedState);
+  const serializedState = JSON.stringify(state);
+  localStorage.setItem('state', serializedState);
 };
