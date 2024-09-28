@@ -56,18 +56,6 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/Dragons"
-                className={({ isActive }) => (
-                  isActive
-                    ? 'text-blue-500 border-b-2 border-blue-500'
-                    : 'hover:text-blue-400'
-                )}
-              >
-                Dragons
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/myProfile"
                 className={({ isActive }) => (
                   isActive
@@ -113,19 +101,6 @@ const Navbar = () => {
               )}
             >
               Missions
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/Dragons"
-              onClick={toggleMobileMenu}
-              className={({ isActive }) => (
-                isActive
-                  ? 'text-blue-500 border-b-2 border-blue-500'
-                  : 'hover:text-blue-400'
-              )}
-            >
-              Dragons
             </NavLink>
           </li>
           <li>
